@@ -1,0 +1,16 @@
+<div class="list-filter">
+  <aig-product-filters
+    [availableFilters]="filters"
+    [activatedFilters]="activeFilters"
+    (activeFilters)="updateActivatedFilters($event)"
+  ></aig-product-filters>
+</div>
+<!--{{items | json}}-->
+<aig-product
+  [items]="items"
+  [id]=""
+  [name]=""
+  [price]=""
+  [currency]="">
+</aig-product>
+

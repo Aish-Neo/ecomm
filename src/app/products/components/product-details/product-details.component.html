@@ -1,0 +1,15 @@
+<div class="product-details">
+  <div class="product">
+  <aig-product [name]="product.name"
+               [size]="'3'"
+               [price]="product.price"
+  ></aig-product>
+    <aig-color-list [colors]="product.colors"></aig-color-list>
+    <button
+      class="btn btn-outline-primary"
+      (click)="addToCart(product)"
+      type="button">
+      Add to cart
+    </button>
+  </div>
+</div>

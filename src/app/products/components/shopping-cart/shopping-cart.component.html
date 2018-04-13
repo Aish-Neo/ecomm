@@ -1,0 +1,15 @@
+<p>You have {{shoppingCartItems.length}} items in your bag</p>
+<div *ngFor="let item of shoppingCartItems">
+  <aig-product
+    [id]="item.id"
+    [name]="item.name"
+    [price]="item.price"
+    [currency]="item.currency">
+  </aig-product>
+  <aig-color-list [colors]="item.colors"></aig-color-list>
+  <button
+    type="button"
+    class="btn btn-outline-danger"
+    (click)="removeItem(item)">Remove</button>
+</div>
+<p>Total: {{getTotal() | async}}</p>

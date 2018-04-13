@@ -1,0 +1,49 @@
+<ng-container *ngIf="!items">
+  <div class="row">
+    <div class="col-lg-6">
+      <label>Name:</label>
+      <a routerLink="/details/{{id}}">{{name}}</a>
+    </div>
+    <div class="col-lg-6">
+      <label>Price</label>
+      {{price}} - {{getCurrency()}}
+    </div>
+  </div>
+    <!--<div class="product-image">-->
+      <!--<i class="fa fa-picture-o" [ngStyle]="{ 'font-size': size+'em'}"></i>-->
+    <!--</div>-->
+    <!--<div class="item-name">-->
+      <!--<a routerLink="/details/{{id}}">{{name}}</a>-->
+    <!--</div>-->
+    <!--<div class="product-price">-->
+      <!--{{getCurrency()}}{{price}}-->
+    <!--</div>-->
+</ng-container>
+<!--{{items | json}}-->
+  <table class="table" *ngIf="items">
+    <thead>
+    <tr>
+      <th>#Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Currency</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of items;let i = index">
+      <td>{{i+1}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.price}}</td>
+      <td>{{getCurrency()}}</td>
+      <td>
+        <a routerLink="/details/{{item.id}}">View </a>
+        <button type="button"
+                class="btn btn-outline-primary"
+                (click)="addToCart(item)">
+          Add to cart
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
