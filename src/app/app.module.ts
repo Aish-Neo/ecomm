@@ -9,6 +9,8 @@ import {CartService} from './_services/cart.service';
 import {ProductsService} from './_services/products.service';
 import {ProductsModule} from "./products/products.module";
 import {SortService} from "./sortable-table/sort.service";
+import {Helpers} from "../providers/helpers/helpers";
+import {CookieService} from "ngx-cookie-service";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,7 @@ import {SortService} from "./sortable-table/sort.service";
     ProductsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [CartService, ProductsService, SortService],
+  providers: [CartService, ProductsService, SortService, Helpers, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
