@@ -1,6 +1,10 @@
 <ng-container *ngIf="!items">
   <div class="row">
     <div class="col-lg-6">
+      <div class="product-image">
+        <span class="oi oi-box"></span>
+      <i class="fa fa-picture-o" [ngStyle]="{ 'font-size': size+'em'}"></i>
+      </div>
       <label>Name:</label>
       <a routerLink="/details/{{id}}">{{name}}</a>
     </div>
