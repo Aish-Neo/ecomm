@@ -1,5 +1,10 @@
 # EcommPoc
 
+![Travis](https://img.shields.io/travis/USER/REPO.svg)
+
+![Travis branch](https://img.shields.io/travis/USER/REPO/BRANCH.svg)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
 ## Development server
