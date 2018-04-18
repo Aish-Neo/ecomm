@@ -1,8 +1,8 @@
 # EcommPoc
 
-![Travis](https://img.shields.io/travis/USER/REPO.svg)
+![Travis](https://travis-ci.org/Aish-Neo/ecomm.svg?branch=master)
 
-![Travis branch](https://img.shields.io/travis/USER/REPO/BRANCH.svg)
+![Travis branch](https://travis-ci.org/Aish-Neo/ecomm.svg?branch=master)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
